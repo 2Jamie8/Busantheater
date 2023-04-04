@@ -1,0 +1,459 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'GmarketSansMedium';
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    line-height: 1;
+    color: #101e4a;
+    min-width: 1920px;/* 모바일로 볼 때 사이즈 정해주기 */
+}
+header {
+    width: 1440px;
+    margin: 0 auto;
+}
+header h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+}
+header .inner nav .gnb .depth01 {
+    display: inline-block;
+    padding: 0 50px;
+    vertical-align: top;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+}
+header .inner nav .gnb .depth01 .depth02 {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 100px; left: 0;
+    display: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+header .inner nav .gnb .depth01:hover {
+    background-color: #101e4a;
+    color: #fff;
+}
+header .inner nav .gnb .depth01:hover .depth02 {
+    display: block;
+    background-color: #101e4a;
+}
+header .inner nav .gnb .depth01 .depth02 li {
+    line-height: 1;
+    padding: 20px 20px;
+    color: #fff;
+}
+header .inner nav .gnb:hover::before {
+    display: block;
+}
+main .main_visual{
+    width: 100%; height: 836px;
+    background-image: url(../img/Mainvisual.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+main .main_visual section {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+main .main_visual section div {
+    margin: 160px 0;
+}
+main .main_visual section div img {
+    display: block;
+    width: 342px; height: 460px;
+}
+main .main_visual section div p {
+   color: #fff;
+   text-align: center;
+   margin-top: 15px;
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 25px;
+}
+main .cont01 {
+    width: 1440px;
+    margin: 200px auto;
+}
+main .cont01 .cont01_text {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+main .cont01 .cont01_text h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+main .cont01 .cont01_text a {
+    height: 24px;
+    margin-top: 25px;
+}
+main .cont01 .cont01_text sub {
+    font-size: 20px;
+    font-weight: 500;
+}
+main .cont01 .list .item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+main .cont01 .list .item .ticket1 {
+    width: 342px; height: 460px;
+    position: relative;
+}
+main .cont01 .list .item .ticket1::before {
+    content: '';
+    width: 100%; height: 100%;
+    background-color: #000000a1;
+    border-radius: 50px;
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    display: none;
+}
+main .cont01 .list .item .ticket1 img {
+    width: 100%; height: 100%;
+}
+main .cont01 .list .item .ticket1:hover div {
+    display: block;
+}
+main .cont01 .list .item .ticket1:hover::before {
+    display: block;
+}
+main .cont01 .list .item .ticket1 div {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+main .cont01 .list .item .ticket1 div p {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+    width: 200px; height: 70px;
+    line-height: 2.1;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+main .cont01 .list .item .ticket1 div p:first-child {
+    margin-bottom: 30px;
+}
+main .cont01 .list .item .ticket2 {
+    width: 1074px; height: 460px;
+    position: relative;
+}
+main .cont01 .list .item .ticket2 img {
+    width: 100%; height: 100%;
+}
+main .cont01 .list .item .ticket2 .text {
+    color: #fff;
+    position: absolute;
+    top: 50px; left: 50px;
+    width: 970px;
+    display: flex;
+    justify-content: space-between;
+}
+main .cont01 .list .item .ticket2 .text h3 {
+    font-size: 50px;
+    font-weight: 500;
+}
+main .cont01 .list .item .ticket2 .text h5 {
+    font-size: 30px;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin: 30px 0 30px;
+    line-height: 1.2;
+}
+main .cont01 .list .item .ticket2 .text li {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+main .cont01 .list .item .ticket2 .text li:first-child {
+    margin-bottom: 20px;
+}
+main .cont01 .list .item .ticket2 .text li:nth-child(3) {
+    padding-left: 75px;
+    font-size: 20px;
+    color: #a1a1a1;
+}
+main .cont01 .list .item:last-child .ticket2 .text li:nth-child(2) {
+    font-size: 23px;
+}
+main .cont01 .list .item .ticket2 .text span {
+    font-size: 25px;
+    font-weight: 500;
+    display: block;
+    margin-top: 30px;
+}
+main .cont01 .list .item .ticket2 .text p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+main .cont01 .list .item:nth-child(2) .ticket1 {
+    order: 2;
+}
+main .cont01 .list .item:nth-child(2) .ticket2 h5 {
+    margin: 20px 0 20px;
+}
+/* -------------------------------------------------------------- */
+main .cont02 {
+    width: 1440px;
+    margin: 200px auto;
+}
+main .cont02 .cont02_text {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+main .cont02 .cont02_text h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+main .cont02 .cont02_text a {
+    height: 24px;
+    margin-top: 25px;
+}
+main .cont02 .cont02_text sub {
+    font-size: 20px;
+    font-weight: 500;
+}
+main .cont02 .list {
+    display: flex;
+    justify-content: space-between;
+}
+main .cont02 .list .item figure {
+    width: 342px; height: 450px;
+    position: relative;
+}
+main .cont02 .list .item figure::before {
+    content: '';
+    width: 100%; height: 100%;
+    background-color: #000000a1;
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    display: none;
+}
+main .cont02 .list .item figure:hover::before {
+    display: block;
+}
+main .cont02 .list .item figure:hover h5 {
+    display: block;
+}
+main .cont02 .list .item figure img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+main .cont02 .list .item h5 {
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.2;
+    width: 302px;
+    font-size: 20px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+main .cont02 .list .item .text h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+main .cont02 .list .item .text .A {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    position: relative;
+}
+main .cont02 .list .item .text .A::before {
+    content: '';
+    display: block;
+    width: 100%; height: 2px;
+    background-color: #101e4a;
+    position: absolute;
+    top: 31px; left: 0;
+}
+main .cont02 .list .item .text .B {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+main .cont02 .list .item .text .B div {
+    position: relative;
+}
+main .cont02 .list .item .text .B div img {
+    display: block;
+    width: 160px; height: 40px;
+}
+main .cont02 .list .item .text .B div span {
+    color: #fff;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 70px; height: 16px;
+    line-height: 1.2;
+}
+/* ------------------------------------------------------------ */
+main .cont03 {
+    width: 1440px;
+    margin: 200px auto;
+    background-color: #101e4a;
+    border-radius: 30px;
+    padding: 50px 80px;
+    position: relative;
+    color: #fff;
+}
+main .cont03 .cont03_text figure {
+    width: 100px; height: 100px;
+    margin-bottom: 50px;
+    position: relative;
+}
+main .cont03 .cont03_text figure img:last-child {
+    display: none;
+    position: absolute;
+    top: 0; left: 0;
+    border: 1px solid #fff;
+}
+main .cont03 .cont03_text figure:hover img:last-child {
+    display: block;
+}
+main .cont03 .cont03_text figure img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+main .cont03 .cont03_text h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    position: absolute;
+    top: 75px; left: 50%;
+    transform: translateX(-50%);
+}
+main .cont03 .list .item {
+    display: flex;
+    justify-content: end;
+}
+main .cont03 .list .item .text {
+    background-color: #fff;
+    color: #101e4a;
+    padding: 35px;
+    border-radius: 50px;
+    margin-right: 20px;
+    position: relative;
+    margin-bottom: 60px;
+    width: 850px; height: 170px;
+}
+main .cont03 .list .item .text h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+main .cont03 .list .item .text p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+main .cont03 .list .item .text span {
+    font-size: 20px;
+    position: absolute;
+    color: #fff;
+    bottom: -30px; right: 0;
+}
+main .cont03 .list .item figure {
+    width: 150px; height: 150px;
+}
+main .cont03 .list .item figure img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+main .cont03 .list .item:nth-child(2) {
+    justify-content: start;
+}
+main .cont03 .list .item:nth-child(2) .text{
+    order: 1;
+    margin-left: 20px;
+}
+main .cont03 .list .item:nth-child(2) .text span {
+    position: absolute;
+    bottom: -30px; left: 0;
+}
+main .cont03 .list .item:last-child {
+    justify-content: start;
+}
+main .cont03 .list .item:last-child .text{
+    order: 1;
+    margin-left: 20px;
+}
+main .cont03 .list .item:last-child .text span {
+    position: absolute;
+    bottom: -30px; left: 0;
+}
+/* -------------------------------------------------------------- */
+footer .footer_01 {
+    padding: 20px 0;
+    border-top: 2px solid #101e4a;
+    border-bottom: 2px solid #101e4a;
+}
+footer .footer_01 .text {
+    width: 1440px; 
+    margin: 0 auto;
+}
+footer .footer_01 .text ul {
+    display: flex;
+    justify-content: center;
+}
+footer .footer_01 .text ul li {
+    margin: 0 100px;
+    font-size: 20px;
+}
+footer .footer_02 {
+    width: 1440px;
+    margin: 50px auto;
+}
+footer .footer_02 .text {
+    display: flex;
+    margin: 15px 0;
+}
+footer .footer_02 .text p {
+    font-size: 20px;
+    margin-right: 50px;
+}
+footer .footer_02 .text:first-child p {
+    font-weight: 700;
+}
